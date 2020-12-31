@@ -11,7 +11,7 @@ $DNSjson = "https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns
 $DNStxt = "https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones-hosts.txt"
 $RC24DNS = "164.132.44.106"
 $new_converted = "dns_zones-hosts.txt"
-$new_verified = "dns_zones-hosts(verified).txt"
+$new_verified = "dns_zones-hosts-verified.txt"
 
 # Converts json format to array.
 $dns_zones = (New-Object System.Net.WebClient).DownloadString($DNSjson) | ConvertFrom-Json
